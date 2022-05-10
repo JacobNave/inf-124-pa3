@@ -1,0 +1,74 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "HP - 17.3 Laptop - Intel Core i3 - 8GB Memory - 256GB SSD - Natural Silver",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477887_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 359.99,
+        "desc": "Responsive and reliable performance: Surf, stream, and do so much more with a powerful Intel® Core™ processor. Plus, extensive quality testing ensures that your laptop keeps going … and going. Sleek. Stylish. Portable. With a sleek and stylish design, this eye-catching laptop looks as good as it performs and is easy to take anywhere. Stay Connected and Entertained: Stay connected and entertained with a longlasting battery with HP Fast Charge. Store more of what you love with ample storage options."
+      },
+      {
+        "id": 2,
+        "name": "Dell - Inspiron 3511 15.6 Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500646_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 439.99,
+        "desc": "The Inspiron laptop is designed with you and the environment in mind, using recycled plastics. Plus, it’s ENERGY STAR 8.0 certified and built with an ergonomic lift hinge design to keep you comfortably connected all day. The Inspiron 15 3000 is expertly designed to keep you connected, powered by the latest processors."
+      },
+      {
+        "id": 3,
+        "name": "Samsung - Galaxy Book Pro 360 15.6 AMOLED Touch-Screen Laptop - Intel Evo Platform Core i7 - 16GB Memory - 1TB SSD - Mystic Navy",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457790_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 999.99,
+        "desc": "Why can’t laptops be more like phones? They can when you turn your work-life balance completely around with Samsung Galaxy Book Pro 360. It’s a premium PC that quickly converts to a top-of-the-line tablet and is Intel® Evo™ platform certified. Precisely draw out plans and write down notes with our S Pen and Samsung Notes — both redesigned for the best experience possible. Then instantly flip to having fun, and get lost in your favorite movie and more, all with 120% color volume on an advanced AMOLED screen and the surround-sound technology of Dolby Atmos audio. Top it out with the power of the latest Intel® 11th Gen Core™ processor, up to 16GB of RAM and an entire TB of storage — all running on the fast and familiar Windows 11 OS — and you get all the space and speed you need. Plus, with Wi-Fi that’s up to 3x faster, you’ll discover a new era of mobile computing. It’s not a laptop. It’s a Galaxy Book."
+      },
+      {
+        "id": 4,
+        "name": "HP - ENVY 17.3 Touch-Screen Laptop - Intel Core i7 - 12GB Memory - 512GB SSD + 32GB Optane - Natural Silver",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479185_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 949.99,
+        "desc": "See and do it all in perfect color: The ENVY 17 Laptop gives you a dazzling high definition screen, Delta E less than 2 color accuracy(20) and more ways to make your masterpiece with HP Display Control and HP Quick Drop file sharing. Power to set your creativity free: The powerful Intel® Core™ processor and Iris® Xe Graphics bring your creative vision to life incredibly fast and Thunderbolt™ 4 support gives you options to customize and expand your creative capabilities. Peace of mind at your fingertips: Keep it confidential and have total peace of mind with a fail-safe privacy camera shutter key that turns your camera off and makes it unhackable. Keep your conversations private with the dedicated mute mic button."
+      },
+      {
+        "id": 5,
+        "name": "Samsung - Galaxy Book Flex2 Alpha 13.3 QLED Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Mystic Black",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457788_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 749.99,
+        "desc": "Everything you love in a Galaxy PC, and more. Galaxy Book Flex2 ⍺ sits at the top of its class with high-quality features to match. Equipped with our latest technology, innovative design, vivid display and a high-speed processor that'll dazzle your senses while exceeding all expectations. Its super vivid QLED screen features millions of colors realized at 100% color volume, adapting to your environment so you have an easy viewing experience no matter the lighting. Choose your view with the ultra-slim 2-in-1 design that transforms from laptop to tablet. Add the latest 11th Gen Intel Core i5 / i7 processor, and your work, play and entertainment continue from morning to night. Enjoy added built-in features like Second Screen capability and enhanced connectivity to anything within the Galaxy ecosystem, from buds to tablets and so much more. Plus, a super-fast charging battery¹ that lasts 17 hours on a single charge makes it easy to accomplish everything you need to do and everything you want to do wherever, and whenever you want."
+      },
+      {
+        "id": 6,
+        "name": "ASUS - Vivobook 15.6 Laptop - Intel 10th Gen i3 - 8GB Memory - 256GB PCIE SSD - Slate Grey",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469397_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 319.99,
+        "desc": "ASUS Vivobook Laptop. Enjoy everyday activities with this ASUS notebook PC. The Intel Core i3 processor and 8GB of RAM let you run programs smoothly, on the 15.6-inch HD display. This ASUS notebook PC has 256GB SSD that shortens load times and offers ample storage"
+      },
+      {
+        "id": 7,
+        "name": "HP - 15.6 Touch-Screen Laptops - AMD Ryzen 3 - 8GB Memory - 256GB SSD - Natural Silver",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477886_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 329.99,
+        "desc": "View more, carry less: Thin, light, and designed to travel. See more of your photos, videos and projects on a 6.5 mm micro-edge bezel display. Reliable performance: Tackle your busiest days with the performance of a reliable processor. Save more of what you love with abundant storage for all your photos, videos and documents. Go longer, faster: Long-lasting battery life and HP Fast Charge technology lets you work, watch, and stay connected all day."
+      },
+      {
+        "id": 8,
+        "name": "ASUS - Vivobook 17.3 Laptop - Intel Core 10th Gen i5 - 12GB Memory - 1TB HDD",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469399_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 449.99,
+        "desc": "ASUS Vivobook Laptop. Enjoy everyday activities with this ASUS notebook PC. The Intel Core i5 processor and 12GB of RAM let you run programs smoothly, on the 17.3-inch"
+      },
+      {
+        "id": 9,
+        "name": "HP - ENVY 2-in-1 15.6 Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD + 32GB Optane - Natural Silver",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479183_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 1079.99,
+        "desc": "See and do it all in perfect color: Bring it to life your way. The ENVY x360 15 gives you a dazzling FHD screen with Delta E less than 2 color accuracy and more ways to make your masterpiece with HP Quick Drop file sharing. Power to set your creativity free: The powerful Intel® Core™ processor and Iris® Xe graphics makes bringing your creative vision to life incredibly fast and Smart Sense automatically adjusts your PC's power for optimal performance. Peace of mind at your fingertips: Keep it confidential with privacy camera shutter key to turn camera off and a mute mic button for private conversation."
+      },
+      {
+        "id": 10,
+        "name": "HP - 15.6 Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Natural Silver",
+        "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477889_sd.jpg;maxHeight=300;maxWidth=450",
+        "price": 829.99,
+        "desc": "Take it anywhere. See more. With its thin and light design, 6.5 mm micro-edge bezel display, and 82% screen to body ratio(40) – take this PC anywhere and see and do more. Reliable performance for every day: Powerful enough for your busiest days, this PC features an Intel® processor and a solid state drive for speedy boot-up and snappier overall experience. Powered up and productive. All day long. With a long battery life and fast-charge technology, this laptop lets you work, watch, and stay connected all day. Integrated precision touchpad with multi-touch support speeds up both navigation and productivity."
+      }
+    ]
+  }

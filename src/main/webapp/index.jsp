@@ -49,12 +49,12 @@
         while (resultSet.next()) { 
       %>
         <div class="product">
-          <h1 class="product-title">
-            <a class="product-link" href=<%= "http://localhost:8080/pa3/product?id=$" + resultSet.getString("prod_id") %>> <%=resultSet.getString("name") %></a>
-          </h1>
           <a class="product-img" href=<%= "http://localhost:8080/pa3/product?id=$" + resultSet.getString("prod_id") %>>
             <img class="product-img" src=<%=resultSet.getString("img") %>>
           </a>
+          <h1 class="product-title">
+            <a class="product-link" href=<%= "http://localhost:8080/pa3/product?id=$" + resultSet.getString("prod_id") %>> <%=resultSet.getString("name") %></a>
+          </h1>
           <div><%=resultSet.getString("price") %></div>
         </div>
       <% 

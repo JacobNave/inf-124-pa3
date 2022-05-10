@@ -10,7 +10,7 @@ public class DatabaseHelper {
     try {
       Class.forName("com.mysql.jdbc.Driver");
       Connection con = DriverManager.getConnection("jdbc:mysql:// localhost:3306/" + "product_data", "root",
-          "password");
+          "squishy1");
       return con;
     } catch (ClassNotFoundException e) {
       e.printStackTrace();

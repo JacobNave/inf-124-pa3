@@ -53,13 +53,16 @@
             <a class="product-link" href=<%= "http://localhost:8080/pa3/product?id=$" + resultSet.getString("prod_id") %>> <%=resultSet.getString("name") %></a>
           </h1>
           <a class="product-img" href=<%= "http://localhost:8080/pa3/product?id=$" + resultSet.getString("prod_id") %>>
-            <img class="product-img" src=<%=resultSet.getString("img") %>>
+            <img class="product-img" src=<%= resultSet.getString("img") %>>
           </a>
-          <div><%=resultSet.getString("price") %></div>
+          <div><%= resultSet.getString("price") %></div>
         </div>
       <% 
         } 
       %>
     </div>
+    <jsp:forward page="product.jsp">
+      <jsp:param name="product_id" value= <%= resultSet.getString('prod_id') %></jsp:param>
+    </jsp:forward>
   </body>
 </html>

@@ -26,7 +26,7 @@
         </h1>
         <img id="product-img"></img>
         <div id="product-price">
-          <%= request.getParameter("product_id") %>
+          <%= request.getParameter("id") %>
         </div>
         <div id="product-description"></div>
         <button type='button' id="add_button">Add to Cart</button>

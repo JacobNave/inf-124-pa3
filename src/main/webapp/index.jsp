@@ -20,20 +20,7 @@
 
   </head>
   <body>
-    <div id="header">
-      <!-- <a href="http://localhost:8080/pa2/index" class="header-item logo"
-        >Ecommerce</a
-      >
-      <a href="http://localhost:8080/pa2/about" class="header-item">About</a>
-      <a href="http://localhost:8080/pa2/orders" class="header-item">Orders</a>
-      <a href="http://localhost:8080/pa2/checkOut" class="header-item logo"
-        >Cart</a
-      > -->
-      <p>Ecommerce</p>
-      <p>About</p>
-      <p>Orders</p>
-      <p>Cart</p>
-    </div>
+    <jsp:include page="/WEB-INF/classes/com/uci/pa3/header.jsp" />
     <div>
       <p>Group 9</p>
       <p>Michael Le</p>

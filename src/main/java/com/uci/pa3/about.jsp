@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="http://localhost:8080/pa3/style" />
   </head>
   <body>
-    <div id="header">
-      <a href="http://localhost:8080/pa2/index" class="header-item logo"
-        >Ecommerce</a
-      >
-      <a href="http://localhost:8080/pa2/about" class="header-item">About</a>
-      <a href="http://localhost:8080/pa2/orders" class="header-item">Orders</a>
-      <a href="http://localhost:8080/pa2/checkOut" class="header-item logo"
-        >Cart</a
-      >
-    </div>
+    <jsp:include page="header.jsp" />
     <div style="text-align: center">
       <h1>About Us</h1>
       <h3>

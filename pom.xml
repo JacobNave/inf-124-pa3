@@ -4,12 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.uci.inf124</groupId>
-  <artifactId>temp_convert</artifactId>
+  <groupId>com.uci.pa3</groupId>
+  <artifactId>pa3</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 
-  <name>temp_convert Maven Webapp</name>
+  <name>pa3 Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -26,10 +26,28 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.28</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
+        <scope>provided</scope>
+    </dependency>
   </dependencies>
 
   <build>
-    <finalName>temp_convert</finalName>
+    <finalName>pa3</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
@@ -52,6 +70,21 @@
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
+          <configuration>
+            <webResources>
+              <resource>
+                <!-- this is relative to the pom.xml directory -->
+                <directory>src/main/java/com/uci/pa3/html</directory>
+                <targetPath>WEB-INF/classes/com/uci/pa3/html</targetPath>
+                <includes>
+                  <include>**/*.html</include>
+                  <include>**/*.js</include>
+                  <include>**/*.css</include>
+                  <include>**/*.md</include>
+                </includes>
+              </resource>
+            </webResources>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>

@@ -7,7 +7,7 @@
     </head>
     <body>
         <jsp:useBean id="mybean" scope="session" 
-                     class="com.uci.inf124.Converter" />
+                     class="com.uci.pa3.Converter" />
         <jsp:setProperty name="mybean" property="celsius" />
         Given Celsius temperature is:
         <jsp:getProperty name = "mybean" property = "celsius" />

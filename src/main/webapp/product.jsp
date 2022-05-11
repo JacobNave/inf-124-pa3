@@ -13,23 +13,31 @@
   <body>
     <div id="header">
       <a href="http://localhost:8080/pa2/index" class="header-item logo"
-      >EcommerceZZZZ</a>
-    <a href="http://localhost:8080/pa2/about" class="header-item">About</a>
-    <a href="http://localhost:8080/pa2/orders" class="header-item">Orders</a>
-    <a href="http://localhost:8080/pa2/checkOut" class="header-item logo"
-      >Cart</a
-    >
+      >Ecommerce</a>
+      <a href="http://localhost:8080/pa2/about" class="header-item">About</a>
+      <a href="http://localhost:8080/pa2/orders" class="header-item">Orders</a>
+      <a href="http://localhost:8080/pa2/checkOut" class="header-item logo"
+        >Cart</a
+      >
     </div>
+    <% 
+      DatabaseHelper databaseHelper = new DatabaseHelper(); 
+      Connection connection = databaseHelper.getConnection(); 
+      Statement statement = connection.createStatement();
+      String queryStr = "SELECT prod_id, name, description, img, price FROM products WHERE prod_id = " + request.getParameter("id");
+      ResultSet resultSet = statement.executeQuery(queryStr); 
+      resultSet.next();
+    %>
     <div id="page-container">
-        <h1 id="product-title">
-
-        </h1>
-        <img id="product-img"></img>
-        <div id="product-price">
-          <%= request.getParameter("id") %>
-        </div>
-        <div id="product-description"></div>
-        <button type='button' id="add_button">Add to Cart</button>
+      <h1 id="product-title">
+        <%= resultSet.getString("name") %>
+      </h1>
+      <img id="product-img" src=<%= resultSet.getString("img") %>>
+      <div id="product-price">$<%= resultSet.getString("price") %></div>
+      <div id="product-description">
+        <%= resultSet.getString("description") %>
+      </div>
+      <button type='button' id="add_button">Add to Cart</button>
     </div>
   </body>
 </html>

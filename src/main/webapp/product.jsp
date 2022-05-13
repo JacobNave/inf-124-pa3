@@ -39,5 +39,6 @@
       </div>
       <button type='button' id="add_button">Add to Cart</button>
     </div>
+    <script src="http://localhost:8080/pa3/productjs"></script>
   </body>
 </html>

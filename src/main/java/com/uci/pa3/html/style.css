@@ -184,6 +184,58 @@ select {
   text-overflow: ellipsis;
 }
 
+.checkOut {
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.checkOutContainer {
+  width: 50%;
+  margin: auto;
+  background-color: #c2c0c0;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  width: 97%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.cart {
+    width: 100%;
+    margin: auto;
+    background-color: #c2c0c0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.col-25 {
+  padding: 15px;
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+p {
+  color: black;
+  padding-left: 30px;
+}
+
+@media (max-width: 800px) {
+  .col-25 {
+    -ms-flex: 25%;
+    flex: 25%;
+  }
+  .col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+  }
+}
+
 /*If screen less than 580px */
 @media (max-width: 580px) {
   #header {

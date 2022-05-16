@@ -91,10 +91,10 @@
                     
                     <div>
                     <label>
-                        Zip:
+                        Zip (Press 'Enter' after filling in for autofill):
                         <input
+                        onkeydown=search(this);
                         type="text"
-                        onsubmit="loadZipcodes('zipcodes.json')"
                         id="zip"
                         name="Zip"
                         placeholder="92612"
@@ -154,21 +154,23 @@
 
     <script src="http://localhost:8080/pa3/checkoutjs"></script>
     <script>
-        function loadZipcodes(jsonFile){
 
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function(){
-            let json_info = JSON.parse(this.responseText);
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("zip").innerHTML = json_info['data'][0].zip
-                document.getElementById("state").innerHTML = json_info['data'][0].state
-                document.getElementById("city").innerHTML = json_info['data'][0].city
+        function search(ele) {
+            if(event.key === 'Enter') {
+                let xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function(){
+                    let json_info = JSON.parse(this.responseText);
+                    if (this.readyState == 4 && this.status == 200) {
+                        if (typeof json_info[String(document.getElementById("zip").value)] != undefined){
+                            document.getElementById("state").value = json_info[String(document.getElementById("zip").value)].state
+                            document.getElementById("city").value = json_info[String(document.getElementById("zip").value)].city
+                        }
+                    }
             }
-
+            xhttp.open("GET", "zipcodes.json", true)
+            xhttp.send()      
+            }
         }
-        xhttp.open("GET", jsonFile, true)
-        xhttp.send()
-    }
    
     </script>
   </body>

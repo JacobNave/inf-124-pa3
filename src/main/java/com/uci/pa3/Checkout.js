@@ -64,6 +64,9 @@ async function setOrders() {
   const lineBreak = document.createElement('hr');
   cartContainer.appendChild(lineBreak);
 
+  // const tax = document.createElement('label');
+  // tax.innerHTML = 
+
   const totalPrice = document.createElement('p');
   totalPrice.innerHTML = 'Total: $' + total.toString();
   cartContainer.appendChild(totalPrice);   

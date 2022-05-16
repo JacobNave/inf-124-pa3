@@ -96,6 +96,14 @@
                   <include>**/*.js</include>
                   <include>**/*.css</include>
                   <include>**/*.md</include>
+                  <include>**/*.jsp</include>
+                </includes>
+              </resource>
+              <resource>
+                <directory>src/main/java/com/uci/pa3/</directory>
+                <targetPath>WEB-INF/classes/com/uci/pa3/</targetPath>
+                <includes>
+                  <include>**/*.jsp</include>
                 </includes>
               </resource>
             </webResources>

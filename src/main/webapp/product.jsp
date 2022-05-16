@@ -11,15 +11,7 @@
     <link rel="stylesheet" href="http://localhost:8080/pa3/style" />
   </head>
   <body>
-    <div id="header">
-      <a href="http://localhost:8080/pa3/index" class="header-item logo"
-      >Ecommerce</a>
-      <a href="http://localhost:8080/pa3/about" class="header-item">About</a>
-      <a href="http://localhost:8080/pa3/orders" class="header-item">Orders</a>
-      <a href="http://localhost:8080/pa3/checkOut" class="header-item logo"
-        >Cart</a
-      >
-    </div>
+    <jsp:include page="/WEB-INF/classes/com/uci/pa3/header.jsp" />
     <% 
       DatabaseHelper databaseHelper = new DatabaseHelper(); 
       Connection connection = databaseHelper.getConnection(); 

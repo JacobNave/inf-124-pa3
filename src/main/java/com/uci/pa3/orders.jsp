@@ -25,7 +25,7 @@
         DatabaseHelper databaseHelper = new DatabaseHelper(); 
         Connection connection = databaseHelper.getConnection(); 
         Statement statement = connection.createStatement(); 
-        ResultSet resultSet = statement.executeQuery("SELECT order_id, shipping_address, phone_number, first_name, last_name FROM orders"); 
+        ResultSet resultSet = statement.executeQuery("SELECT order_id, shipping_address, phone_number, first_name, last_name, rating FROM orders"); 
         while (resultSet.next()) { 
       %>
         <div class="order">
@@ -47,6 +47,23 @@
             }
             %>
             </ol>
+            <div class="rating">
+              <%for(int i = 0; i < 5; i ++) {
+                String color;
+                Integer rating = new Integer(resultSet.getInt("rating"));
+                if(rating == null) {
+                  color = "gray";
+                } else if(rating > i) {
+                  color = "orange";
+                } else {
+                  color = "gray";
+                }
+                %>
+                  <a class="star" style=<%="color:" + color%> id=<%=String.valueOf(i) + " " + resultSet.getString("order_id") + " star"%>>★</a>  
+              <%
+              }
+              %>
+            </div>
         </div>
       <% 
         }

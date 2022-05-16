@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@WebServlet(name = "zipcodes", value = "/zipcodes")
+@WebServlet(name = "zipcodes.json", value = "/zipcodes.json")
 public class zipcodesServlet extends HttpServlet {
 
   @Override
@@ -22,9 +22,7 @@ public class zipcodesServlet extends HttpServlet {
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    resp.setContentType("text/plain");
-    List<String> file = Files.readAllLines(Paths.get("/WEB-INF/classes/com/uci/pa3/zip_codes.json"));
-    String data = file.stream().collect(Collectors.joining());
-    resp.getWriter().write(data);
+    RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/classes/com/uci/pa3/zipcodes.json");
+    view.forward(req, resp);
   }
 }

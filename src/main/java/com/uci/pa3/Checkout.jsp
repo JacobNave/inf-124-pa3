@@ -94,6 +94,7 @@
                         Zip:
                         <input
                         type="text"
+                        onchange="loadZipcodes('zipcodes.json')"
                         id="zip"
                         name="Zip"
                         placeholder="92612"
@@ -152,6 +153,21 @@
         </div>
 
     <script src="http://localhost:8080/pa3/checkoutjs"></script>
-    <script> src="http://localhost:8080/pa3/zipcodes"</script>
+    <script>
+        function loadZipcodes(jsonFile){
+
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            let json_info = JSON.parse(this.responseText);
+            console.log(json_info);
+            document.getElementById("zip").innerHTML = json_info.zip
+            document.getElementById("state").innerHTML = json_info.state
+            document.getElementById("city").innerHTML = json_info.city
+        }
+        xhttp.open("GET", jsonFile, true)
+        xhttp.send()
+    }
+   
+    </script>
   </body>
 </html>

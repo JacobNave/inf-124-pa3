@@ -94,7 +94,7 @@
                         Zip:
                         <input
                         type="text"
-                        onchange="loadZipcodes('zipcodes.json')"
+                        onsubmit="loadZipcodes('zipcodes.json')"
                         id="zip"
                         name="Zip"
                         placeholder="92612"
@@ -159,10 +159,12 @@
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function(){
             let json_info = JSON.parse(this.responseText);
-            console.log(json_info);
-            document.getElementById("zip").innerHTML = json_info.zip
-            document.getElementById("state").innerHTML = json_info.state
-            document.getElementById("city").innerHTML = json_info.city
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("zip").innerHTML = json_info['data'][0].zip
+                document.getElementById("state").innerHTML = json_info['data'][0].state
+                document.getElementById("city").innerHTML = json_info['data'][0].city
+            }
+
         }
         xhttp.open("GET", jsonFile, true)
         xhttp.send()

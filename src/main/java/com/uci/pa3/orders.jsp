@@ -59,7 +59,7 @@
                   color = "gray";
                 }
                 %>
-                  <a class="star" style=<%="color:" + color%> id=<%=String.valueOf(i) + " " + resultSet.getString("order_id") + " star"%>>★</a>  
+                  <a class="star" style=<%="color:" + color%> id="<%=String.valueOf(i)%> <%=resultSet.getString("order_id")%> star">★</a>  
               <%
               }
               %>
@@ -69,5 +69,6 @@
         }
       %>
     </div>
+    <script src="http://localhost:8080/pa3/ordersjs"></script>
   </body>
 </html>

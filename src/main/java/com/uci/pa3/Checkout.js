@@ -15,9 +15,9 @@ async function submitForm() {
     const creditCard = document.getElementById('credit').value;
     const pin = document.getElementById('pin').value;
     const shippingAddress = document.getElementById('Address').value;
-    const city = document.getElementById('City').value;
-    const state = document.getElementById('State').value;
-    const zip = document.getElementById('Zip').value;
+    const city = document.getElementById('city').value;
+    const state = document.getElementById('state').value;
+    const zip = document.getElementById('zip').value;
 
     const submitObj = {
         firstName: firstName,

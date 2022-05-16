@@ -1,0 +1,14 @@
+{
+ "data":[
+ {
+   "zip": 10001,
+   "state": "NY",
+   "city": "New York"
+ },
+ {
+   "zip": 10002,
+   "state": "NY",
+   "city": "New York"
+ }
+ ]
+}

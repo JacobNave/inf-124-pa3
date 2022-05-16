@@ -16,6 +16,7 @@
       type="text/css"
       href="http://localhost:8080/pa3/style"
     />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
     <jsp:include page="header.jsp" />
@@ -87,6 +88,19 @@
                         />
                     </label>
                     </div>
+                    
+                    <div>
+                    <label>
+                        Zip:
+                        <input
+                        type="text"
+                        id="zip"
+                        name="Zip"
+                        placeholder="92612"
+                        required="required"
+                        />
+                    </label>
+                    </div>
                     <div>
                     <label>
                         Address:
@@ -99,41 +113,26 @@
                         />
                     </label>
                     </div>
-
                     <div>
                     <label>
                         City:
                         <input
                         type="text"
-                        id="City"
+                        id="city"
                         name="City"
                         placeholder="Irvine"
                         required="required"
                         />
                     </label>
                     </div>
-
                     <div>
                     <label>
                         State:
                         <input
                         type="text"
-                        id="State"
+                        id="state"
                         name="State"
                         placeholder="CA"
-                        required="required"
-                        />
-                    </label>
-                    </div>
-
-                    <div>
-                    <label>
-                        Zip:
-                        <input
-                        type="text"
-                        id="Zip"
-                        name="Zip"
-                        placeholder="92612"
                         required="required"
                         />
                     </label>
@@ -153,5 +152,6 @@
         </div>
 
     <script src="http://localhost:8080/pa3/checkoutjs"></script>
+    <script> src="http://localhost:8080/pa3/zipcodes"</script>
   </body>
 </html>
